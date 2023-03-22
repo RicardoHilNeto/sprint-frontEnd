@@ -6,8 +6,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="img/iconeoni.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Trabalho</title>
 </head>
-    
+<div class="navigation">
+    <ul>
+        <li>
+            <a href="index.html">
+                <span class="icon"><i class="fa-solid fa-house"></i></span>
+                <span class="title">Home</span>
+            </a>
+        </li>
+        <li>
+            <a href="restaurante.html">
+                <span class="icon"><i class="fa-solid fa-utensils"></i></span>
+                <span class="title">Restaurante</span>
+            </a>
+        </li>
+        <li>
+            <a href="peixes.html">
+                <span class="icon"><i class="fa-solid fa-fish-fins"></i></span>
+                <span class="title">Peixe</span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <span class="icon"><i class="fa-solid fa-circle-question"></i></span>
+                <span class="title">Atendimento</span>
+            </a>
+        </li>
+    </ul>
+</div>
+<header>
+    <center>
+    <img src="./img/iconeoni.png">
+    </center>
+</header>
+
+<div class="toggle" onclick="toggleMenu();"></div>
+    <script type="text/javascript">
+        function toggleMenu(){
+            let navigation = document.querySelector('.navigation');
+            let toggle = document.querySelector('.toggle');
+            navigation.classList.toggle('active');
+            toggle.classList.toggle('active');
+        }
+    </script>
+
 </body>
 </html>
